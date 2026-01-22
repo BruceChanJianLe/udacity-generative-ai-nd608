@@ -8,8 +8,8 @@ micromamba create -n automatic1111 python=3.10 -c conda-forge -y
 
 First terminal:  
 ```bash
-wget -q https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh
-chmod +x webui.sh
+git clone --branch dev --depth 1 https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+cd stable-diffusion-webui
 micromamba activate automatic1111
 ./webui.sh
 ```
